@@ -90,3 +90,8 @@ body {
 .content-text .icones img {
     width: 8%;
 }
+
+.content-text .icones img:hover {
+    transition: all 200ms ease-in-out;
+    transform: translate(0, -20%);
+}
