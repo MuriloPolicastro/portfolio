@@ -4,6 +4,7 @@
     --font-padrao: 'Roboto', sans-serif;
     --cor-primaria: #8330F0;
     --cor-secundaria: #252525;
+    --cor-terciaria: #41127e;
 }
 
 * {
@@ -103,7 +104,7 @@ body {
 }
 
 .about {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
     box-shadow: inset 0px 8px 12px rgba(0, 0, 0, 0.363);
 }
 
@@ -112,16 +113,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding: 5%;
 }
 
-.content-about h2 {
-    color: var(--cor-primaria);
+.content-about h2, p {
+    color: white;
 }
 
 .content-about img {
     max-width: 120px;
     padding: 1rem;
+    
+}
+
+.about-text {
+    text-align: center;
 }
 
 @media (max-width:550px) {
