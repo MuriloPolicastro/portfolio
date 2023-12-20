@@ -188,6 +188,15 @@ body {
     120px 100px #8330F0,
     80px 180px #8330F0,
     170px 160px #8330F0,
+    980px 100px #8330F0,
+    1050px 140px #8330F0,
+    1120px 40px #8330F0,
+    1570px 190px #8330F0,
+    1650px 80px #8330F0,
+    1285px 100px #8330F0,
+    1760px 180px #8330F0,
+    1830px 220px #8330F0,
+    1900px 160px #8330F0,
     330px 10px #8330F0;
 }
 
@@ -216,6 +225,15 @@ body {
     120px 100px #8330F0,
     80px 180px #8330F0,
     170px 160px #8330F0,
+    980px 100px #8330F0,
+    1050px 140px #8330F0,
+    1120px 40px #8330F0,
+    1570px 190px #8330F0,
+    1650px 80px #8330F0,
+    1285px 100px #8330F0,
+    1760px 180px #8330F0,
+    1830px 220px #8330F0,
+    1900px 160px #8330F0,
     330px 10px #8330F0;
 }
 
@@ -243,6 +261,15 @@ body {
     124px 100px #8330F0,
     70px 180px #8330F0,
     155px 160px #8330F0,
+    980px 100px #8330F0,
+    1100px 140px #8330F0,
+    1150px 200px #8330F0,
+    1500px 190px #8330F0,
+    1205px 100px #8330F0,
+    1280px 70px #8330F0,
+    1660px 210px #8330F0,
+    1830px 160px #8330F0,
+    1910px 50px #8330F0,
     305px 10px #8330F0;
 }
 
@@ -271,6 +298,15 @@ body {
     120px 100px #8330F0,
     80px 180px #8330F0,
     170px 160px #8330F0,
+    980px 100px #8330F0,
+    1100px 140px #8330F0,
+    1150px 200px #8330F0,
+    1500px 190px #8330F0,
+    1205px 100px #8330F0,
+    1280px 70px #8330F0,
+    1660px 210px #8330F0,
+    1830px 160px #8330F0,
+    1910px 50px #8330F0,
     330px 10px #8330F0;
 }
 
@@ -310,8 +346,11 @@ body {
 }
 
 .item-project h3 {
+    color: var(--cor-secundaria);
+}
+
+.item-project:hover h3 {
     color: var(--cor-primaria);
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.164);
 }
 
 @media (max-width:550px) {
