@@ -322,6 +322,18 @@ body {
 .content-projects {
     width: 100%;
     height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-projects h2 {
+    padding-bottom: 3%;
+    color: var(--cor-primaria);
+}
+
+.all-projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
