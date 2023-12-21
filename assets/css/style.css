@@ -14,6 +14,7 @@
 
 body {
     font-family: var(--font-padrao);
+    overflow-y: scroll;
 }
 
 .container {
@@ -30,6 +31,10 @@ body {
     background-size: cover;
     position: relative;
     z-index: 2;
+}
+
+span#burguer {
+    display: none;
 }
 
 .menu {
@@ -370,9 +375,36 @@ body {
         height: 110vh;
     }
 
+    span#burguer {
+        display: inline-block;
+        position: absolute;
+        background-color: var(--cor-primaria);
+        color: white;
+        padding: 1%;
+        margin: 1%;
+        right: 1px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--cor-primaria);
+        position: sticky;
+    }
+
     .menu a {
-        font-size: clamp(0.4rem, 0.9rem, 1.5rem);
-        padding-right: 0.7rem;
+        font-size: 150%;
+        width: 100vw;
+        padding: 2rem;
+        margin: 0;
+        color: white;
+        text-align: center;
     }
 
     .content-home {

@@ -6,14 +6,16 @@
     <title>Murilo Policastro</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
         <div class="home" id="home">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
             <div class="menu">
-                <a href="#home">Ínicio</a>
-                <a href="#about">Sobre</a>
-                <a href="#projects">Projetos</a>
+                <a href="#home" onclick="fecharMenu()">Ínicio</a>
+                <a href="#about" onclick="fecharMenu()">Sobre</a>
+                <a href="#projects" onclick="fecharMenu()">Projetos</a>
                 <a href="#">Experiencia</a>
                 <a href="#">Entre em Contato</a>
             </div>
@@ -77,4 +79,5 @@
         </div>
     </div>
 </body>
+<script src="assets/js/main.js"></script>
 </html>
