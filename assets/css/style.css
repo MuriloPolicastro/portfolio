@@ -390,6 +390,22 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 100px;
 }
 
+.contact-mail a {
+    border: solid 2px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-mail span.send {
+    font-size: 40px;
+    border-left: solid 2px #fff;
+    padding-left: 0.5rem;
+}
+
 @media (max-width:850px) {
     .projects {
         height: 500px;
@@ -504,7 +520,7 @@ body::-webkit-scrollbar-thumb:hover {
         margin-right: 0;
     }
 
-    .content-about {
+    .content-two-column {
         flex-direction: column;
     }
 
