@@ -144,6 +144,23 @@ body::-webkit-scrollbar-thumb:hover {
 .logos {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.item-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-logo img {
+    width: 100%;
+}
+
+.item-logo h3 {
+    color: #fff;
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
 }
 
 .content-two-column h2 {
@@ -152,11 +169,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .content-two-column p {
     color: #dddddd;
-}
-
-.content-two-column img {
-    max-width: 24%;
-    padding: 1rem;
 }
 
 .line {
@@ -390,7 +402,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 100px;
 }
 
-.contact-mail a {
+.contact-mail a, .contact-zap a {
     border: solid 2px #fff;
     display: flex;
     align-items: center;
@@ -398,12 +410,17 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0.5rem;
     text-decoration: none;
     color: #fff;
+    margin-top: 1rem;
 }
 
-.contact-mail span.send {
+.contact-mail span.send, .contact-zap span.send {
     font-size: 40px;
     border-left: solid 2px #fff;
     padding-left: 0.5rem;
+}
+
+.contact-zap img {
+    width: 6.2rem;
 }
 
 @media (max-width:850px) {
