@@ -142,8 +142,6 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 1rem;
 }
 
-
-
 .about-logos {
     grid-area: 'logos';
     padding: 1rem;
@@ -201,6 +199,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .soft-skill {
     grid-area: 'skill';
+}
+
+.soft-skill li {
+    color: #fff;
+    list-style-type: disc;
 }
 
 .projects {
@@ -419,6 +422,13 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     padding: 5%;
     gap: 1rem;
+    color: #fff;
+}
+
+.line-contact {
+    background-color: #ba89fa;
+    width: 2px;
+    height: 14rem;
 }
 
 .contact-mail span {
