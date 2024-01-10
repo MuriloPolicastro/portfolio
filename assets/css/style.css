@@ -132,13 +132,21 @@ body::-webkit-scrollbar-thumb:hover {
     z-index: 2;
 }
 
-.content-two-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.content-about {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logos line text" "soft soft";
     align-items: center;
-    padding: 5%;
+    justify-content: space-around;
     gap: 1rem;
+}
+
+
+
+.about-logos {
+    grid-area: 'logos';
+    padding: 1rem;
 }
 
 .logos {
@@ -163,21 +171,24 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top: 0.5rem;
 }
 
-.content-two-column h2 {
+.content-about h2 {
     color: #ba89fa;
 }
 
-.content-two-column p {
+.content-about p {
     color: #dddddd;
 }
 
 .line {
+    grid-area: 'line';
     background-color: #ba89fa;
     width: 2px;
     height: 14rem;
+    margin-left: 50%;
 }
 
 .about-text {
+    grid-area: 'text';
     text-align: center;
     padding: 1rem;
 }
@@ -186,6 +197,10 @@ body::-webkit-scrollbar-thumb:hover {
     padding-top: 0.7rem;
     text-align: justify;
     max-width: 600px;
+}
+
+.soft-skill {
+    grid-area: 'skill';
 }
 
 .projects {
@@ -395,6 +410,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 .item-project:hover h3 {
     color: var(--cor-primaria);
+}
+
+.content-two-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    gap: 1rem;
 }
 
 .contact-mail span {
