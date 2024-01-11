@@ -183,7 +183,6 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: #ba89fa;
     width: 2px;
     height: 14rem;
-    margin-left: 50%;
 }
 
 .about-text {
@@ -202,14 +201,24 @@ body::-webkit-scrollbar-thumb:hover {
 
 .soft-skill {
     grid-area: 'skill';
-    width: 40%;
+    width: 95%;
+}
+
+.soft-skill h2 {
+    padding-bottom: 0.5rem;
 }
 
 .soft-skill ul {
-    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.soft-skill li {
+    padding-top: 0.4rem;
     color: #fff;
     text-align: left;
     font-size: 1.2rem;
+    padding-left: 1rem;
 }
 
 .projects {
@@ -464,6 +473,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width:850px) {
+    .soft-skill {
+        width: 60%;
+    }
+
+    .soft-skill ul {
+        display: flex;
+        flex-direction: column;
+    }
+
     .projects {
         height: 500px;
     }
