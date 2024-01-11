@@ -135,15 +135,16 @@ body::-webkit-scrollbar-thumb:hover {
 .content-about {
     display: grid;
     grid-template-columns: 1fr 0.1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logos line text" "soft soft";
+    grid-template-rows: 1fr 0.8fr;
+    grid-template-areas: "logos line soft" "text text text";
     align-items: center;
-    justify-content: space-around;
+    justify-items: center;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .about-logos {
-    grid-area: 'logos';
+    grid-area: logos;
     padding: 1rem;
 }
 
@@ -178,7 +179,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .line {
-    grid-area: 'line';
+    grid-area: line;
     background-color: #ba89fa;
     width: 2px;
     height: 14rem;
@@ -186,24 +187,29 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .about-text {
-    grid-area: 'text';
+    grid-area: text;
     text-align: center;
+    justify-self: center;
     padding: 1rem;
 }
 
 .about-text p {
     padding-top: 0.7rem;
     text-align: justify;
-    max-width: 600px;
+    max-width: 900px;
+    text-indent: 1rem;
 }
 
 .soft-skill {
     grid-area: 'skill';
+    width: 40%;
 }
 
-.soft-skill li {
+.soft-skill ul {
+    padding-top: 1rem;
     color: #fff;
-    list-style-type: disc;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .projects {
