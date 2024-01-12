@@ -124,7 +124,7 @@ body::-webkit-scrollbar-thumb:hover {
     max-width: 100%;
 }
 
-.two-column {
+.about, .two-column {
     background-color: var(--cor-terciaria);
     box-shadow: inset 0px 8px 12px rgba(0, 0, 0, 0.363), inset 0px -8px 12px rgba(0, 0, 0, 0.363);
     text-align: center;
@@ -224,8 +224,7 @@ body::-webkit-scrollbar-thumb:hover {
 .projects {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(173, 173, 173) 100%);
     height: 350px;
-    position: relative;
-    z-index: 1;
+    position: relative; 
 }
 
 .stars{
@@ -595,11 +594,16 @@ body::-webkit-scrollbar-thumb:hover {
         margin-right: 0;
     }
 
+    .content-about {
+        display: flex;
+        flex-direction: column;
+    }
+
     .content-two-column {
         flex-direction: column;
     }
 
-    .line {
+    .line, .line-contact {
         height: 2px;
         width: 25rem;
     }
